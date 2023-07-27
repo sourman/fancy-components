@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        "ghost": '-2rem -2rem 2px rgb(251, 207, 232, 35%), 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-purple-100 flex flex-col justify-center items-center min-h-screen m-4 gap-4">
+    <section class="shadow-ghost rounded-xl text-[#181028] font-medium bg-white p-5 w-56 ghost-shadow">
+        <header class="text-xl tracking-tight font-medium pb-6 inline-flex">
+            <div class="w-8">
+                <img src="https://cdn3.iconfinder.com/data/icons/arrow-outline-8/32/left_2-64.png" alt="">
+            </div>
+            <span class="px-3">Settings</span>
+        </header>
+        <ul class="flex flex-col">
+            <li class="hover:bg-pink-50 px-3 py-2 rounded border border-transparent hover:border hover:border-pink-100">
+                <label class="cursor-pointer relative flex flex-row justify-between
+                        items-center w-full">
+                <span>Smart sorting</span>
+                <input type="checkbox" vlaue="" class="sr-only peer">
+                <div class="rounded-full h-3.5 w-9 p-0.5 ml-3 bg-white
+                            border-2 border-pink-200
+                            peer-focus:outline-none peer-focus:ring-4
+                            peer-focus:ring-pink-100
+                            after:content-[''] after:rounded-full
+                            after:bg-pink-200 after:px-1 after:absolute
+                            after:h-5 after:w-5 after:-translate-y-[0.45rem]
+                            after:-translate-x-2
+                            after:transition-all after:duration-500
+                            peer-checked:after:translate-x-full
+                            peer-checked:after:bg-pink-400
+                            "></div>
+                            </label>
+            </li>
+            <li class="">
+                    <select id="themes" class="w-full px-3 py-2 block rounded
+                                focus:outline-none focus:ring-2 focus:ring-pink-100 
+                                hover:bg-pink-50 border
+                                border-transparent hover:border
+                                hover:border-pink-100
+                                appearance-none
+                                bg-[url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-16.png')]
+                                bg-right bg-no-repeat bg-origin-content">
+                        <option selected>Toggle Theme</option>
+                        <option >Tomatoy spice</option>
+                        <option >Apple Juice</option>
+                        <option >Crawfish Gumbo</option>
+                    </select>
+                </label>
+            </li>
+            <li class="">
+                <select id="language" class="w-full px-3 py-2 block rounded
+                                focus:outline-none focus:ring-2 focus:ring-pink-100 
+                                hover:bg-pink-50 border
+                                border-transparent hover:border
+                                hover:border-pink-100
+                                appearance-none
+                                bg-[url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-16.png')]
+                                bg-right bg-no-repeat bg-origin-content">
+                                    <option selected>Choose Language</option>
+                                    <option >French</option>
+                                    <option >Fringlish</option>
+                                    <option >English</option>
+                                </select>
+                </label>
+            </li>
+        </ul>
+    </section>
+    <section class="bg-white text-[#181028] p-4 space-y-2 shadow-lg rounded-xl max-w-md md:max-w-lg">
+        <header class="font-bold">Days</header>
+        <ul class="">
+            <li class="font-medium border-slate-600 hover:bg-pink-50 rounded p-2">
+                <input id="day-checkbox" type="checkbox">
+                <label for="day-checkbox">Monday</label></li>
+            <li class="font-medium font-medium border-slate-600 hover:bg-pink-50 rounded p-2"><input type="checkbox" name="" id=""> Tuesday</li>
+            <li class="font-medium font-medium border-slate-600 hover:bg-pink-50 rounded p-2"><input type="checkbox" name="" id=""> Wednesday</li>
+            <li class="font-medium font-medium border-slate-600 hover:bg-pink-50 rounded p-2"><input type="checkbox" name="" id=""> Thursday</li>
+            <li class="font-medium font-medium border-slate-600 hover:bg-pink-50 rounded p-2"><input type="checkbox" name="" id=""> Friday</li>
+            <li class="font-medium font-medium border-slate-600 hover:bg-pink-50 rounded p-2"><input type="checkbox" name="" id=""> Saturday</li>
+            <li class="font-medium font-medium border-slate-600 hover:bg-pink-50 rounded p-2"><input type="checkbox" name="" id=""> Sunday</li>
+        </ul>
+        <button class=" bg-slate-900 p-1 rounded-sm w-full text-white px-3">
+            Remove All Filters
+        </button>
+    </section>
+    
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
